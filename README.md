@@ -1,2 +1,2 @@
 # conference
-Responsive HTML5 Bootstrap 3 template for Event Site
+Website for International Conference on Energy and Environmental Engineering (ICEEE 2021)
