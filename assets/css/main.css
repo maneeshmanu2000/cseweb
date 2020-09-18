@@ -262,6 +262,7 @@ ul li {
   -webkit-transition: all 0.2s linear 0s;
           transition: all 0.2s linear 0s;
 }
+
 .navbar-custom .navbar-nav li {
   margin: 0;
 }
@@ -303,11 +304,12 @@ ul li {
 }
 .site-branding .logo {
   color: #fff;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
   margin-right: 5px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  height: 100%;
 }
 .site-branding .logo:focus, .site-branding .logo:hover {
   text-decoration: none;
@@ -325,6 +327,23 @@ ul li {
   /* background: url(../images/backgrounds/header.jpg) no-repeat center center/cover; */
   background: url(../images/backgrounds/slider1.jpg) no-repeat center center/cover;
   display: table;
+}
+
+@media (max-width: 1080px)
+{
+  .site-header {
+    background: url(../images/backgrounds/slider_1080px.jpg) no-repeat center center/cover;
+  }
+  .heading
+  {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    border-radius: 30px;
+  }
+  .heading h1
+  {
+    padding-bottom: 5px;
+  }
 }
 .site-header::before {
   content: "";
@@ -570,6 +589,7 @@ ul li {
     margin-bottom: 0;
   }
 }
+
 @media (min-width: 992px) {
   .schedule-box {
     margin: 0;
