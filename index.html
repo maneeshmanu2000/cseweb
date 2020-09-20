@@ -41,8 +41,8 @@
 
                     <!-- navigation menu -->
                     <li class="active"><a data-scroll href="#about">About</a></li>
-                    <li><a data-scroll href="#committee">Committee</a></li> 
-                    <li><a data-scroll href="#registration">Registration</a></li>
+                    <li><a data-scroll id="committee-icon" href="#committee">Committee</a></li> 
+                    <!-- <li><a data-scroll href="#registration">Registration</a></li> -->
                     <li><a data-scroll href="#jecc">Jecc</a></li>
                     <li><a data-scroll href="#location">Location</a></li>
                     <!-- <li><a data-scroll href="#speakers">Speakers</a></li>            
@@ -68,7 +68,7 @@
             </div>
             
             
-            <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+            <a class="btn btn-white" data-scroll onclick="window.alert('Registrations will start soon!!'+'\nPlease Stay Tuned')">Register Now</a>
         
         </div>
     </header>
@@ -92,7 +92,7 @@
 
                     <h3 class="section-title multiple-title">Topics</h3>
 
-                    <p>The conference includes plenary, keynote &amp; invited
+                    <p style="text-align: justify; text-justify: inter-word;">The conference includes plenary, keynote &amp; invited
                         speeches, oral presentations &amp; poster sessions on different topics. The scope of the conference may include
                         following major topics:</p>
                         
@@ -155,9 +155,12 @@
                 <ol class="carousel-indicators">
                     <li data-target="#fawesome-carousel-two" data-slide-to="0" class="active"></li>
                     <li data-target="#fawesome-carousel-two" data-slide-to="1"></li>
+                    <li data-target="#fawesome-carousel-two" data-slide-to="2"></li>
                 </ol>
              
                 <div class="carousel-inner" role="listbox">
+
+                    <!-- First Slide -->
                     <div class="item active">
                         <div class="row">
                             <div class="col-sm-4">
@@ -173,9 +176,10 @@
                             <div class="col-sm-4">
                                 <div class="single-testimonials">
                                     <div class="text">
-                                        <h3>Patron</h3><br/>
+                                        <h3>Patron</h3>
                                         <h4>Msgr. Thomas Kakkassery,</h4>
                                         <p>Manager</p><br/>
+                                        <h3>Co-Patron</h3>
                                         <h4>Rev. Fr. Roy Joseph Vadakkan,</h4>
                                         <p>Secretary & Campus Head</p> 
                                     </div>
@@ -183,61 +187,120 @@
                             </div>
                             
                             <div class="col-sm-4">
-                                <div class="single-testimonials">
+                                <div class="multiple-testimonials">
                                     <div class="text">
-                                        <h3>Conference Chairman</h3><br/>
+                                        <h3>Conference Chairman</h3>
                                         <h4>Rev. Dr. Jose Kannampuzha,</h4>
-                                        <p>Director of Academics</p><br/>
+                                        <p>Director (Academics)</p><br/>
+                                        <h3>Conference Vice Chairman</h3>
+                                        <h4>Dr. Sunny Joseph Kalayathankal,</h4>
+                                        <p>Principal</p><br/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- First Slide -->
                     <!-- Second Slide -->
                     <div class="item">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <div class="single-testimonials">
                                     <div class="text">
-                                        <h3>General Chairs</h3><br/>
-                                        <h4>Dr. Sunny Joseph Kalayathankal</h4><br/>
-                                        <h4>Sr. Dr. Rose Anitha</h4><br/>
-                                        <h4>Prof. Ratnan P</h4>
+                                        <h3>General Chairs</h3>
+                                        <h4>Sr. Dr. Rose Anitha</h4><p>Director (Research)</p>
+                                        <h4>Dr. U. Lazer John</h4><p>Director (Industry & HR)</p>
+                                        <h4>Prof. Ratnan P</h4><p>Vice-Principal</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <div class="single-testimonials">
                                     <div class="text">
-                                        <h3>Organizing Chairs</h3><br/>
-                                        <h4>Dr. Vivek Lukose</h4><br/>
-                                        <h4>Prof. Vincy Varghese</h4>
+                                        <h3>Organizing Chairs</h3>
+                                        <h4>Dr. Vivek Lukose</h4><p>HOD-Mechatronics</p><br/>
+                                        <h4>Prof. Vincy Varghese</h4><p>HOD-Civil Engineering</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-sm-3">
+                            <div class="col-sm-4">
                                 <div class="single-testimonials">
                                     <div class="text">
                                         <h3>Organizing Secretary</h3><br/>
-                                        <h4>Dr. Deepanraj B</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-3">
-                                <div class="single-testimonials">
-                                    <div class="text">
-                                        <h3>Coordinators</h3><br/>
-                                        <h4>Dr. Agnes Anto</h4>
-                                        <h4>Ms. Nisha Sherief</h4>
+                                        <h4>Dr. Deepanraj B</h4><p>Associate Professor, Mechanical Engineering</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Second Slide -->
+
+
+                    <!-- Third Slide -->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-testimonials">
+                                    <div class="text">
+                                        <h3>Coordinators</h3>
+                                        <h4>Dr. Agnes Anto,</h4><p>Associate Professor, Civil Engineering</p>
+                                        <h4>Dr. C. Karthik,</h4><p>ssociate Professor, Mechatronics</p>
+                                        <h4>Ms. Nisha Sherief,</h4><p>Assistant Professor, Mechanical Engineering</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="single-testimonials">
+                                    <div class="text">
+                                        <h3>National Advisory Committee</h3>
+                                        <p style="font-size: small;">
+                                            1.Dr. Kaustubha Mohanty, IIT Guwahati, Assam
+                                            2.Dr. S. Jayaraj, NIT Calicut, Kerala
+                                            3.Dr. Abhilash Suryan, CET, Trivandrum
+                                            4.Dr. Debabrata Das, IIT Kharagpur, West Bengal
+                                            5.Dr. B Chitti Babu, IIITDM, Kancheepuram
+                                            6.Dr. R. Thundil Karuppa Raj, VIT, Vellore
+                                            7.Dr. A. Shaija, NIT Calicut, Kerala
+                                            8.Dr. Avinash Kumar Agarwal, IIT Kanpur, Uttar Pradesh
+                                            9.Dr. E. Natarajan, Anna University, Chennai
+                                            10.Dr. C. P. Jawahar, Amity University, Gwalior
+                                            11.Dr. J. Ranjitha, VIT, Vellore
+                                            12.Dr. Chandramohan V.P, NIT Warangal, Telangana
+                                            13.Dr. M. Mohanraj. HCET, Coimbatore
+                                            14.Dr. S. Murugan, NIT Rourkela, Odisha
+                                            15.Dr. Purnanand V Bhale, NIT Surat, Gujarat
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-4">
+                                <div class="single-testimonials">
+                                    <div class="text">
+                                        <h3>International advisory Committee</h3>
+                                        <p style="font-size: small;">
+                                            1.Dr. Ong Hwai Chyuan, University of Technology Sydney, Australia
+                                            2.Dr. Neil J Hewitt, Ulster University, Ireland
+                                            3.Dr. Martin Kaltschmitt, Hamburg University of Technology, Hamburg
+                                            4.Dr. Hector A. Ruiz, Autonomous University of Coahuila, Mexico
+                                            5.Dr. Sumathy Krishnan, North Dakota State University, USA
+                                            6.Dr. Kamaruzzaman Sopian, Universiti Kebangsaan Malaysia, Malaysia
+                                            7.Dr. Yerzhan Belyayev, Satbayev University, Kazakhstan
+                                            8.Dr. M. M. Noor, Universiti Malaysia Pahang, Malaysia
+                                            9.Dr. Nazmul Ahsan, University of Tokyo, Japan
+                                            10.Dr. P. Abdul Salam, Asian Institute of Technology, Thailand
+                                            11.Md. Mizanur Rahman - Universiti Teknologi Malaysia, Malaysia
+                                            12.Dr. John W. Sheffield, Purdue University, USA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Slide -->
+
                 </div>
              
             </div>
@@ -246,7 +309,7 @@
     </section>
 
     
-
+<!--
     <section id="registration" class="section registration">
         <div class="container">
             <div class="row">
@@ -254,7 +317,7 @@
                     <h3 class="section-title">Registration &amp; Pricing</h3>
                 </div>
             </div>
-                
+               
             <form action="#" id="registration-form">
                 <div class="row">
                     <div class="col-md-12" id="registration-msg" style="display:none;">
@@ -313,17 +376,14 @@
             </form>
         </div>
     </section>
+-->
 
-
-    <section id="jecc" class="section bg-image-2 contribution">
+    <section id="jecc" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
-                    
-                    <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
-
-                    <a class="btn btn-white" href="#">Submit</a>
+                    <h3 class="text-uppercase mt0 font-400">Jyothi Engineering College</h3>
+                    About Jyothi Goes here
                 </div>
             </div>
         </div>
@@ -355,10 +415,10 @@
                 <div class="col-md-12">
                     <p class="site-info">Designed and <br> Developed by <a>CSEWEB</a></p>
                     <ul class="social-block">
-                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
-                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
-                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/jecctcr"><i class="ion-social-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/jecc.ac.in"><i class="ion-social-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/jyothi-engineering-college"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/jyothiengineeringcollege"><i class="ion-social-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
