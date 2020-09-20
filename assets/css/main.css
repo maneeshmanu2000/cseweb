@@ -671,7 +671,7 @@ ul li {
 }
 
 @media (min-width: 1080px){
-  #committee2,#committee-icon{
+  #committee2{
     display: none;
   }
 }
