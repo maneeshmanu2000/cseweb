@@ -665,5 +665,14 @@ ul li {
   #committee,#committee-icon{
     display: none;
   }
+  #committee2,#committee-icon{
+    display: block;
+  }
+}
+
+@media (min-width: 1080px){
+  #committee2,#committee-icon{
+    display: none;
+  }
 }
 /* Committee-Carousel */
