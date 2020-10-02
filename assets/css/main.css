@@ -662,16 +662,16 @@ ul li {
 }
 
 @media (max-width: 1080px){
-  #committee1{
+  #committee_desktop{
     display: none;
   }
-  #committee2,#committee-icon{
+  #committee_mobile,#committee-icon{
     display: block;
   }
 }
 
 @media (min-width: 1080px){
-  #committee2{
+  #committee_mobile{
     display: none;
   }
 }
