@@ -50,8 +50,9 @@
                     <!-- navigation menu -->
                     <li class="active"><a data-scroll href="#jecc">Jecc</a></li>
                     <li><a data-scroll href="#registration">Registration</a></li>
-                    <li><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll onclick="ShowTopics()" href="#topics_div">Topics</a></li>
                     <li><a data-scroll id="committee-icon" href="#committee">Committee</a></li>
+                    <li><a data-scroll href="#about">About</a></li>
                     <li><a data-scroll href="#contact">Contact</a></li>
                     <li><a data-scroll href="#location">Location</a></li>
                 
@@ -158,17 +159,16 @@
                     <p style="text-align: justify; text-justify: inter-word;">The   International   Conference   on   Energy   and   Environmental   Engineering   is   a   multi-disciplinary,   peer-reviewed   international conference on sustainable energy and environment. The objective of this conference is to bring together researchers from academia, government agencies, research laboratories and the corporate sector to present their research works carried out in energy production and management, green energy, environmental engineering, environmental management, climate change and sustainable development. It aims to promote research in the field of sustainable energy, environment and green technology, and facilitate the exchange of new ideas in these fields among academicians, engineers, scientists and practitioners.</p><br/>
 
                 </div><!-- /.col-sm-6 -->
-
                 <div class="col-sm-6">
 
-                    <h3 class="section-title multiple-title">Topics</h3>
+                    <h3 class="section-title multiple-title" id="topics_div">Topics</h3>
 
                     <p style="text-align: justify; text-justify: inter-word;">The conference includes plenary, keynote &amp; invited
                         speeches, oral presentations &amp; poster sessions on different topics. The scope of the conference may include
                         following major topics:</p>
                         
                         <p>
-                            <button class="btn btn-secondary btn-sm" data-toggle="collapse" href="#topics" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-secondary btn-sm" id="show_topics_button" data-toggle="collapse" href="#topics" role="button" aria-expanded="false" aria-controls="collapseExample">
                               Show Topics
                             </button>
                           </p>
@@ -944,6 +944,11 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function ShowTopics(){
+            var show_btn = document.getElementById('show_topics_button').click();
+        }
+    </script>
 
 </body>
 </html>
