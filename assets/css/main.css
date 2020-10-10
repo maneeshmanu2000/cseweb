@@ -663,16 +663,16 @@ ul li {
 }
 
 @media (max-width: 1080px){
-  #committee_desktop{
+  #committee_desktop,#committee_desktop_nav{
     display: none;
   }
-  #committee_mobile,#committee-icon{
+  /* #committee_mobile,#committee_mobile_nav{
     display: block;
-  }
+  } */
 }
 
 @media (min-width: 1080px){
-  #committee_mobile{
+  #committee_mobile,#committee_mobile_nav{
     display: none;
   }
 }

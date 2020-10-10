@@ -51,7 +51,17 @@
                     <li class="active"><a data-scroll href="#jecc">Jecc</a></li>
                     <li><a data-scroll href="#registration">Registration</a></li>
                     <li><a data-scroll onclick="ShowTopics()" href="#topics_div">Topics</a></li>
-                    <li><a data-scroll id="committee-icon" href="#committee">Committee</a></li>
+
+
+                    <li class="dropdown" id="committee_desktop_nav">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committee <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#org_committee">Organizing Committee</a></li>
+                          <li><a href="#national_org_committee">National Advisory Committee</a></li>
+                          <li><a href="#national_org_committee">International Advisory Committee</a></li>
+                        </ul>
+                    </li>
+                    <li id="committee_mobile_nav"><a data-scroll href="#committee">Committee</a></li>
                     <li><a data-scroll href="#about">About</a></li>
                     <li><a data-scroll href="#contact">Contact</a></li>
                     <li><a data-scroll href="#location">Location</a></li>
@@ -222,7 +232,7 @@
         <div id="committee_desktop">
             <div class="container">
             
-                <div class="row">
+                <div class="row" id="org_committee">
                     <div class="col-sm-12">
                         <div class="title">
                             <h3 class="section-title">Organizing Committee</h3>
@@ -325,7 +335,7 @@
             </div>
             <div class="container">
                 <div class="row section">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6"  id="national_org_committee">
                         <h3 style="text-align: center;">National Advisory Committee</h3>
                         <table class="table table-sm">
                             <tbody>
@@ -422,7 +432,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6"  id="international_org_committee">
                         <h3 style="text-align: center;">International Advisory Committee</h3>
                         <table class="table table-sm">
                             <tbody>
@@ -511,12 +521,12 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="title">
-                            <a href="#committee_contents_mobile" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-left: 10px;"><h3 class="section-title">Organizing Committee <i class="fas fa-chevron-down"></i></h3></a>                        
+                            <a href="#committee_contents_mobile" id="committee_contents_mobile_toggle" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-left: 10px;"><h3 class="section-title">Organizing Committee <i class="fas fa-chevron-down"></i></h3></a>                        
                         </div>
                     </div>
                 </div>
                 <div class="collapse" id="committee_contents_mobile">
-                    <div class="row">
+                    <div class="row"  id="org_committee_mobile">
                         <div style="text-align: center;" class="col-sm-12">
                             <h3>Chief Patron</h3>
                             <h4>His Grace Mar Andrews Thazhath,</h4>
@@ -565,7 +575,7 @@
                         </div>
                     </div>
                     <div class="row section">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6"  id="national_org_committee_mobile">
                             <h3 style="text-align: center;">National Advisory Committee</h3>
                             <table class="table table-sm">
                                 <tbody>
@@ -662,7 +672,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6"  id="international_org_committee_mobile">
                             <h3 style="text-align: center;">International Advisory Committee</h3>
                             <table class="table table-sm">
                                 <tbody>
@@ -741,7 +751,6 @@
                                 </tbody>
                             </table>
                         </div>
-                            
                     </div>
                 </div>
             </div>
@@ -947,6 +956,9 @@
     <script>
         function ShowTopics(){
             var show_btn = document.getElementById('show_topics_button').click();
+        }
+        function ShowCommittee(){
+            var show_btn = document.getElementById('committee_contents_mobile_toggle').click();
         }
     </script>
 
