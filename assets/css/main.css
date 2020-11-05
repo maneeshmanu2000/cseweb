@@ -684,11 +684,15 @@ ul li {
 
 .cardreg {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: lightgray;
+  background-color: rgb(255, 255, 255);
   margin: auto;
   text-align: center;
   font-family: arial;
   border-radius: 5PX;
+  border-color: #383838;
+  border-width: .5px;
+  border-style: solid;
+  margin-top: 3px;
 }
 
 .price {
