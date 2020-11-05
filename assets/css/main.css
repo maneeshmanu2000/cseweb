@@ -693,6 +693,7 @@ ul li {
   border-width: .5px;
   border-style: solid;
   margin-top: 3px;
+  padding-bottom: 20px;
 }
 
 .price {
@@ -702,7 +703,7 @@ ul li {
 
 .cardreg p {
   margin: 0 0 0 0;
-  padding: 10px;
+  padding: 5px;
 }
 
 .cardreg h3{
