@@ -1,2 +1,2 @@
 # conference
-Website for International Conference on Energy and Environmental Engineering (ICEEE 2021)
+Website for International Conference on Energy and Environmental Engineering (ICMSM 2021)
